@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+    .triangle-up {
+        clip-path: polygon(50% 0, 50% 0, 0 70%, 100% 70%);
+    }
+    .triangle-down {
+        clip-path: polygon(0 0, 100% 0, 50% 70%, 50% 70%);
+    }
+}
+
+@font-face {
+    font-family: "Parastoo";
+    src: url("./fonts/Parastoo.eot"), url("./fonts/Parastoo.ttf"),
+        url("./fonts/Parastoo.woff"), url("./fonts/Parastoo.woff2");
+}
+
+body {
+    font-family: "Parastoo" !important;
+}
+
+.bg-img {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #84a0df;
+}
+
+.bg-dark {
+    background: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+    );
+}
