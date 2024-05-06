@@ -26,24 +26,24 @@
                 </div>
                 <div class="flex justify-start items-center gap-5">
                     <a href="{{ route('home') }}"
-                        class="flex justify-start items-center gap-2 @if(url()->current() == route('home')) text-secondary @else text-slate-800 hover:text-secondary @endif transition-all duration-200">
+                        class="flex justify-start items-center gap-2 @if (url()->current() == route('home')) text-secondary @else text-slate-800 hover:text-secondary @endif transition-all duration-200">
                         <span class="mt-1"><i class="fa-light fa-home"></i></span>
                         <span>خانه</span>
                     </a>
                     <a href="{{ route('courses') }}"
-                        class="flex justify-start items-center gap-2 @if(url()->current() == route('courses')) text-secondary @else text-slate-800 hover:text-secondary @endif transition-all duration-200">
+                        class="flex justify-start items-center gap-2 @if (url()->current() == route('courses')) text-secondary @else text-slate-800 hover:text-secondary @endif transition-all duration-200">
                         <span class="mt-1"><i class="fa-light fa-money-bill"></i></span>
                         <span>خرید دوره</span>
                     </a>
                     <div class="group relative">
                         <a href="{{ route('blogs') }}"
-                            class="flex justify-start items-center gap-2 py-6 @if(url()->current() == route('blogs')) text-secondary @else text-slate-800 hover:text-secondary @endif transition-all duration-200">
+                            class="flex justify-start items-center gap-2 py-6 @if (url()->current() == route('blogs')) text-secondary @else text-slate-800 hover:text-secondary @endif transition-all duration-200">
                             <span class="mt-1"><i class="fa-light fa-book-open"></i></span>
                             <span>مجله</span>
                             <span class="mt-1 text-sm"><i class="fa-solid fa-chevron-down"></i></span>
                         </a>
                         <ul
-                            class="absolute top-20 right-0 w-60 flex flex-col gap-4 p-3 bg-slate-200 rounded-md opacity-0 invisible group-hover:opacity-100 group-hover:visible group-hover:top-16 transition-all duration-300">
+                            class="absolute top-20 right-0 w-60 flex flex-col gap-4 p-3 bg-slate-100 rounded-md opacity-0 invisible group-hover:opacity-100 group-hover:visible group-hover:top-16 transition-all duration-300">
                             <li>
                                 <a href="javascript:void(0)"
                                     class="block hover:ps-2 hover:text-secondary transition-all duration-150">دیجیتال
@@ -74,19 +74,19 @@
                             <span class="mt-1 text-sm"><i class="fa-solid fa-chevron-down"></i></span>
                         </a>
                         <ul
-                            class="absolute top-20 right-0 w-60 flex flex-col gap-4 p-3 bg-slate-200 rounded-md opacity-0 invisible group-hover:opacity-100 group-hover:visible group-hover:top-16 transition-all duration-300">
+                            class="absolute top-20 right-0 w-60 flex flex-col gap-4 p-3 bg-slate-100 rounded-md opacity-0 invisible group-hover:opacity-100 group-hover:visible group-hover:top-16 transition-all duration-300">
                             <li>
-                                <a href="javascript:void(0)"
+                                <a href="{{ route('about-us') }}"
                                     class="block hover:ps-2 hover:text-secondary transition-all duration-150">درباره ی
                                     ما</a>
                             </li>
                             <li>
-                                <a href="javascript:void(0)"
+                                <a href="{{ route('contact-us') }}"
                                     class="block hover:ps-2 hover:text-secondary transition-all duration-150">ارتباط با
                                     ما</a>
                             </li>
                             <li>
-                                <a href="javascript:void(0)"
+                                <a href="{{ route('terms-of-services') }}"
                                     class="block hover:ps-2 hover:text-secondary transition-all duration-150">منشور
                                     اخلاقی</a>
                             </li>
@@ -95,13 +95,13 @@
                 </div>
             </div>
             <div class="flex justify-end items-center gap-3">
-                <a href="./indexs/sign-up.html"
-                    class="group flex justify-between items-center gap-2 p-2 hover:text-secondary hover:bg-blue-600 border-[1px] border-secondary rounded-md transition-all duration-150">
+                <a href="{{ route('register') }}"
+                    class="group flex justify-between items-center gap-2 p-2 hover:text-secondary hover:bg-blue-600 border-[1px] hover:shadow-xl hover:shadow-blue-600 hover:border-transparent border-secondary rounded-md transition-all duration-150">
                     <span class="text-blue-600 group-hover:text-secondary"><i class="fa-solid fa-user-plus"></i></span>
                     <span>ورود یا ثبت نام</span>
                 </a>
                 <a href="javascript:void(0)"
-                    class="group relative flex justify-between items-center gap-2 p-2 hover:text-secondary hover:bg-blue-600 border-[1px] border-secondary rounded-md transition-all duration-150">
+                    class="group relative flex justify-between items-center gap-2 p-2 hover:text-secondary hover:bg-blue-600 hover:shadow-xl hover:shadow-blue-600 hover:border-transparent border-[1px] border-secondary rounded-md transition-all duration-150">
                     <span class="text-blue-600 group-hover:text-secondary"><i
                             class="fa-solid fa-shopping-bag"></i></span>
                     <span>سبد خرید</span>
