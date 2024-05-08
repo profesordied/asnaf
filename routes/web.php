@@ -32,3 +32,7 @@ Route::prefix('auth')->group(function () {
     Route::post('/register', [UserController::class, 'register'])->middleware('guest');
     Route::post('/logout', [UserController::class, 'logout'])->middleware('auth');
 });
+
+Route::prefix('dashboard')->group(function () {
+    Route::get('/', [UserController::class, 'dashboard'])->name('dashboard');
+});

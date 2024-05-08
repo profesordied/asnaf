@@ -5,7 +5,7 @@
             <div class="flex justify-center">
                 <img src="/img/logo.png" alt="logo" class="w-12 h-12" />
             </div>
-            <div class="flex justify-center items-center mt-6">
+            {{-- <div class="flex justify-center items-center mt-6">
                 <div class="w-14 text-end">
                     <a href="/auth/register"
                         class="{{ url()->current() == route('register') ? 'text-primary' : 'text-gray-400 hover:text-primary' }}"
@@ -55,9 +55,17 @@
                         class="{{ url()->current() == route('login') ? 'text-primary' : 'text-gray-400 hover:text-primary' }}"
                         id="go-login">ورود</a>
                 </div>
-            </div>
+            </div> --}}
             <div class="mt-12">
                 {{ $slot }}
+            </div>
+            <div class="mt-2">
+                @if (url()->current() == route('register'))
+                    <p>قبلا ثبت نام کرده اید؟ <a href="{{ route('login') }}" class="text-primary">وارد</a> شوید.</p>
+                @else
+                    <p>حساب کاربری ندارید؟ <a href="{{ route('register') }}" class="text-primary">ثبت
+                            نام</a> کنید.</p>
+                @endif
             </div>
         </div>
     </div>

@@ -104,8 +104,9 @@ class UserController extends Controller
 
     public function dashboard()
     {
-        $user = auth()->user();
-        return view('dashboard.account', ['user' => $user]);
+        // $user = auth()->user();
+        // return view('dashboard.dashboard', ['user' => $user]);
+        return view('dashboard.dashboard');
     }
     public function wishlist_page()
     {

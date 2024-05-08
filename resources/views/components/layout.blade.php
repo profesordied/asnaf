@@ -11,7 +11,7 @@
             سامانه اتاق اصناف شهرستان نکا
         @endisset
     </title>
-    @vite(['resources/css/app.css', 'resources/css/fontawesome/all.css'])
+    @vite(['resources/css/app.css'])
     <link rel="stylesheet" href="./css/fontawesome/all.css" />
     <link rel="icon" href="/img/logo.png" />
 </head>
@@ -24,7 +24,7 @@
                 <div>
                     <img src="/img/logo.png" alt="logo" class="w-12 h-12" />
                 </div>
-                <div class="flex justify-start items-center gap-5">
+                <div class="flex justify-start items-center gap-9">
                     <a href="{{ route('home') }}"
                         class="flex justify-start items-center gap-2 @if (url()->current() == route('home')) text-secondary @else text-slate-800 hover:text-secondary @endif transition-all duration-200">
                         <span class="mt-1"><i class="fa-light fa-home"></i></span>
@@ -100,14 +100,14 @@
                     <span class="text-blue-600 group-hover:text-secondary"><i class="fa-solid fa-user-plus"></i></span>
                     <span>ورود یا ثبت نام</span>
                 </a>
-                <a href="javascript:void(0)"
+                {{-- <a href="javascript:void(0)"
                     class="group relative flex justify-between items-center gap-2 p-2 hover:text-secondary hover:bg-blue-600 hover:shadow-xl hover:shadow-blue-600 hover:border-transparent border-[1px] border-secondary rounded-md transition-all duration-150">
                     <span class="text-blue-600 group-hover:text-secondary"><i
                             class="fa-solid fa-shopping-bag"></i></span>
                     <span>سبد خرید</span>
                     <span
                         class="absolute top-0 left-0 flex justify-center items-center text-sm w-6 h-6 bg-primary text-slate-200 p-2 rounded-full -translate-x-1/2 -translate-y-1/2">0</span>
-                </a>
+                </a> --}}
             </div>
         </nav>
     </header>
