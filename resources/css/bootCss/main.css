@@ -1,46 +1,20 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-@layer utilities {
-    .triangle-up {
-        clip-path: polygon(50% 0, 50% 0, 0 70%, 100% 70%);
-    }
-    .triangle-down {
-        clip-path: polygon(0 0, 100% 0, 50% 70%, 50% 70%);
-    }
+/* @font-face {
+  font-family: yekan;
+  src: url("../fonts/iranyekanwebbold.ttf") format("truetype");
 }
 
-@font-face {
-    font-family: "Parastoo";
-    src: url("./fonts/Parastoo.eot"), url("./fonts/Parastoo.ttf"),
-        url("./fonts/Parastoo.woff"), url("./fonts/Parastoo.woff2");
-}
+* {
+  font-family: yekan;
+} */
 
 body {
-    font-family: "Parastoo" !important;
-    background-color: red;
-}
-
-.bg-img {
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: #84a0df;
-}
-
-.bg-dark {
-    background: linear-gradient(
-        to right,
-        rgba(0, 0, 0, 0.5),
-        rgba(0, 0, 0, 0.5)
-    );
+    background-color: #eee;
 }
 
 .sidebar {
     height: 100vh;
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)),
-        url(./img/Sidebar-img.jpg);
+        url(../img/Sidebar-img.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -110,11 +84,11 @@ body {
 
 @media (max-width: 768px) {
     .top-navbar {
-        position: static;
+        position: static !important;
     }
 
     .sidebar {
-        position: static;
+        position: static !important;
         height: auto;
     }
 }

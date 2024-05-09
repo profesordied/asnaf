@@ -108,11 +108,18 @@ class UserController extends Controller
         // return view('dashboard.dashboard', ['user' => $user]);
         return view('dashboard.dashboard');
     }
+
+    public function account_page()
+    {
+        return view('dashboard.account');
+    }
+
     public function wishlist_page()
     {
         $user = auth()->user();
         return view('dashboard.wishlist', ['user' => $user]);
     }
+
     public function cart_page()
     {
         $cart_items = auth()->user()->cart->cart_items;
@@ -120,6 +127,7 @@ class UserController extends Controller
         $user = auth()->user();
         return view('dashboard.cart', ['user' => $user, 'cart_items' => $cart_items]);
     }
+
     public function orders_page()
     {
         $user = auth()->user();

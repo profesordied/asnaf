@@ -1,5 +1,4 @@
 <x-layout>
-
     <!-- start cources section -->
     <section class="px-44 py-8 min-h-[65vh]">
         <div class="flex justify-between items-start gap-4">

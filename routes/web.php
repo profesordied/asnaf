@@ -35,4 +35,5 @@ Route::prefix('auth')->group(function () {
 
 Route::prefix('dashboard')->group(function () {
     Route::get('/', [UserController::class, 'dashboard'])->name('dashboard');
+    Route::get('/account', [UserController::class, 'account_page'])->name('account');
 });

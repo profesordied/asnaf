@@ -12,7 +12,7 @@
         @endisset
     </title>
     @vite(['resources/css/app.css'])
-    <link rel="stylesheet" href="./css/fontawesome/all.css" />
+    @vite(['resources/css/fontawesome/all.css'])
     <link rel="icon" href="/img/logo.png" />
 </head>
 
@@ -95,7 +95,7 @@
                 </div>
             </div>
             <div class="flex justify-end items-center gap-3">
-                <a href="{{ route('register') }}"
+                <a href="{{ route('login') }}"
                     class="group flex justify-between items-center gap-2 p-2 hover:text-secondary hover:bg-blue-600 border-[1px] hover:shadow-xl hover:shadow-blue-600 hover:border-transparent border-secondary rounded-md transition-all duration-150">
                     <span class="text-blue-600 group-hover:text-secondary"><i class="fa-solid fa-user-plus"></i></span>
                     <span>ورود یا ثبت نام</span>
